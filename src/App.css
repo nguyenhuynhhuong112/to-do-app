@@ -2,37 +2,104 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: #33CCCC; */
+}
+.TodoWrapper{
+  border-radius: 10px;
+  margin: 5rem;
+  background-color: #9DC8C8;
+  width: 600px;
+  padding: 2rem;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color: #1A1A40;
+  margin: 20px;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #009ACD;
+}
+
+.TodoForm{
+  width: 600x;
+  /* background-color: #33CCCC; */
+  margin-bottom: 20px;
+}
+
+.todo-input{
+  border-radius: 10px;
+  height: 50px;
+  width: 305px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid #888888;
+}
+
+.todo-input:hover{
+  transition: ease-in-out 0.3s;
+  box-shadow: 2px 2px #888888;
+}
+
+.todo-submit{
+  border-radius: 10px;
+  border: none;
+  margin-left: 5px;
+  height: 50px;
+  width: 90px;
+  cursor: pointer;
+  background-color: #009ACD;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.todo-submit:hover{
+  background-color:#00688B ;
+  transition: ease-in-out 0.3s;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Todo{
+  border-radius: 15px;
+  height: 50px;
+  width: 401px;
+  margin: 20px;
+  background-color: #009ACD;
+  align-items: center;
+  margin-left: 68px;
+  font-size: 20px;
+  display: flex;
+  padding-right: 20px;
+  justify-content: space-between;
 }
+.task-checks{
+  display: flex;
+  margin: 0px 10px ;
+}
+
+p{
+  color: white;
+  
+}
+.getTask{
+  margin-left: 20px;
+  font-size: 19px;
+}
+
+.trash{
+  margin-right:15px ;
+}
+
+
+
